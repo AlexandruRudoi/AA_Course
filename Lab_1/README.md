@@ -5,7 +5,7 @@ This repository contains an in-depth analysis of various Fibonacci computation m
 
 ## 📜 Report
 For a detailed analysis, refer to the full LaTeX report:
-👉 **[Fibonacci Performance Analysis Report](https://github.com/AlexandruRudoi/AA_Course/blob/Lab_1/REPORT.pdf)**
+👉 **[Fibonacci Performance Analysis Report](https://github.com/AlexandruRudoi/AA_Course/blob/Lab_1/Lab_1/REPORT.pdf)**
 
 ## 📌 Implemented Methods
 The following Fibonacci computation methods have been implemented and analyzed:
