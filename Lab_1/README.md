@@ -25,5 +25,5 @@ To run the benchmark and visualize the performance comparison:
 
 ```bash
 git clone https://github.com/AlexandruRudoi/AA_Course.git
-cd AA_Course
+cd AA_Course/Lab_1
 python main_benchmark.py
