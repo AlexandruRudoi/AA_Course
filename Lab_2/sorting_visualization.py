@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-from quick_sort import QuickSort
-import random
+import time
 
 
-def live_visualize_sorting(sort_func, arr, sorter):
+def live_visualize_sorting(sort_func, arr, sorter, delay=0):
     """ Live sorting visualization using Matplotlib animation """
     generator = sort_func(sorter, arr)
 
@@ -15,6 +14,8 @@ def live_visualize_sorting(sort_func, arr, sorter):
     def update(frame):
         for rect, val in zip(bar_rects, frame):
             rect.set_height(val)
+
+        time.sleep(delay / 1000)  # Slow down sorting by adding a delay
         return bar_rects
 
     ani = animation.FuncAnimation(
