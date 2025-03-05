@@ -4,9 +4,8 @@ from quick_sort import QuickSort
 import random
 
 
-def live_visualize_sorting(sort_func, arr):
+def live_visualize_sorting(sort_func, arr, sorter):
     """ Live sorting visualization using Matplotlib animation """
-    sorter = QuickSort()
     generator = sort_func(sorter, arr)
 
     fig, ax = plt.subplots()

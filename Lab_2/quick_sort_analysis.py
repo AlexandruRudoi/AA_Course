@@ -43,7 +43,7 @@ def main():
     # Live Visualization (Standard QuickSort)
     arr = [random.randint(1, 100) for _ in range(50)]
     print("\nVisualizing Standard QuickSort...")
-    live_visualize_sorting(lambda s, a: s.quick_sort_generator(a, use_improved=False), arr)
+    live_visualize_sorting(lambda s, a: s.quick_sort_generator(a, use_improved=False), arr, QuickSort())
 
 if __name__ == "__main__":
     main()
