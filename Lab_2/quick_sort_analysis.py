@@ -42,8 +42,13 @@ def main():
 
     # Live Visualization (Standard QuickSort)
     arr = [random.randint(1, 100) for _ in range(50)]
+    arr2 = arr.copy()
     print("\nVisualizing Standard QuickSort...")
     live_visualize_sorting(lambda s, a: s.quick_sort_generator(a, use_improved=False), arr, QuickSort())
+
+    # Live Visualization (Improved QuickSort)
+    print("\nVisualizing Improved QuickSort...")
+    live_visualize_sorting(lambda s, a: s.quick_sort_generator(a, use_improved=True), arr2, QuickSort())
 
 if __name__ == "__main__":
     main()

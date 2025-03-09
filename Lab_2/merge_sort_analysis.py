@@ -45,8 +45,13 @@ def main():
 
     # Live Visualization
     arr = [random.randint(1, 100) for _ in range(50)]
+    arr2 = arr.copy()
     print("\nVisualizing Standard MergeSort...")
     live_visualize_sorting(lambda s, a: s.merge_sort_generator(a, use_improved=False), arr, MergeSort())
+
+    # Live Visualization of Optimized MergeSort
+    print("\nVisualizing Optimized MergeSort...")
+    live_visualize_sorting(lambda s, a: s.merge_sort_generator(a, use_improved=True), arr2, MergeSort())
 
 
 if __name__ == "__main__":

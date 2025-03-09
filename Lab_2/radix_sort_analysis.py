@@ -46,9 +46,15 @@ def main():
 
     # Live Visualization
     arr = [random.randint(1, 100) for _ in range(50)]
+    arr2 = arr.copy()
     print("\nVisualizing Standard Radix Sort...")
     live_visualize_sorting(lambda s, a: s.radix_sort_generator(
         a, use_improved=False), arr, RadixSort(), delay=400)
+    
+    # Live Visualization of Optimized Radix Sort
+    print("\nVisualizing Optimized Radix Sort...")
+    live_visualize_sorting(lambda s, a: s.radix_sort_generator(
+        a, use_improved=True), arr2, RadixSort(), delay=400)
 
 
 if __name__ == "__main__":
